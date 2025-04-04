@@ -7,23 +7,23 @@
 // Si può fare? Certo che si basta ragionare un po’.
 //  Nota: Non è necessario provvedere alla validazione delle email
 
-const listmail = [
-  "federica@mail.it",
-  "andrea@mail.it",
-  "francesco@mail.it",
-  "luca@mail.it",
-  "miamail@mail.it",
-];
-console.log(listmail);
-let checkmail = false;
+// const listmail = [
+//   "federica@mail.it",
+//   "andrea@mail.it",
+//   "francesco@mail.it",
+//   "luca@mail.it",
+//   "miamail@mail.it",
+// ];
+// console.log(listmail);
+// let checkmail = false;
 
-const usermail = prompt("scrivi la tua mail", "miamail@mail.it");
-for (let i = 0; i <= listmail.length; i++) {
-  listmail[i] === "miamail@mail.it";
-  checkmail = true;
-}
+// const usermail = prompt("scrivi la tua mail", "miamail@mail.it");
+// for (let i = 0; i <= listmail.length; i++) {
+//   listmail[i] === "miamail@mail.it";
+//   checkmail = true;
+// }
 
-console.log(checkmail);
+// console.log(checkmail);
 
 // Gioco dei dadi
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
@@ -31,3 +31,17 @@ console.log(checkmail);
 // Prima di partire a scrivere codice poniamoci qualche domanda:
 // Che ci sia un array da qualche parte?
 // Se dobbiamo confrontare qualcosa che "cosa" ci serve?
+
+// const random = [];
+const dadoone = [];
+const dadotwo = [];
+
+const randomOne = Math.round(Math.random() * 5) + 1;
+
+const randomTwo = Math.round(Math.random() * 5) + 1;
+
+dadoone.push(randomOne);
+dadotwo.push(randomTwo);
+
+console.log("dadoone", dadoone);
+console.log("dadotwo", dadotwo);
