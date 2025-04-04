@@ -33,15 +33,22 @@
 // Se dobbiamo confrontare qualcosa che "cosa" ci serve?
 
 // const random = [];
-const dadoone = [];
-const dadotwo = [];
 
-const randomOne = Math.round(Math.random() * 5) + 1;
+let winner1 = false;
+let winner2 = false;
 
-const randomTwo = Math.round(Math.random() * 5) + 1;
+const dadoone = Math.round(Math.random() * 5) + 1;
+const dadotwo = Math.round(Math.random() * 5) + 1;
 
-dadoone.push(randomOne);
-dadotwo.push(randomTwo);
-
+if (dadoone < dadotwo) {
+  winner2 = true;
+  winner1 = false;
+} else if (dadoone > dadotwo) {
+  winner2 = false;
+  winner1 = true;
+}
 console.log("dadoone", dadoone);
 console.log("dadotwo", dadotwo);
+
+console.log("dadoone", winner1);
+console.log("dadotwo", winner2);
